@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#039BE5"
+        android:text="用户登录"
+        android:textColor="#F3F3F3"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textColor="#F8F6F6"
+            android:background="#039BE5"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名"
+            android:background="#90039BE5"
+            android:textColor="#F4EEEE"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码："
+            android:textColor="#F6F6F6"
+            android:background="#039BE5"
+            android:textSize="30sp"
+            />
+        <EditText
+            android:id="@+id/login_pas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:background="#90039BE5"
+            android:hint="请输入密码"
+            android:textColor="#F4EEEE"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/memo_pas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码"
+        android:textColor="#F4EEEE"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="#039BE5"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+        <Button
+            android:id="@+id/login_concel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="30sp"
+            android:textColor="#F4EEEE"
+            android:background="#1E88E5"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/login_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="30sp"
+            android:background="#1E88E5"
+            android:textColor="#F4EEEE"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#1E88E5"
+        android:text="退出"
+        android:textColor="#F4EEEE"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="没有用户先注册再登录"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#E53935"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>
